@@ -3,14 +3,30 @@ layout: default
 title: "🔬 Research Projects"
 nav_order: 2
 has_children: true
+has_toc: false
 permalink: /projects/
+description: "High-performance computing and advanced numerical simulations in astrophysics and climate analytics."
+---
+<style>
+  .site-title {
+    font-size: 1.3em !important; 
+    font-weight: 500 !important;
+    letter-spacing: 0.5px !important;
+  }
+  .side-bar {
+    width: 290px !important; /* Ajustado a los 290px que unificamos */
+    min-width: 290px !important;
+  }
+</style>
+
 ---
 
-# 🔬 GCM Numerical Implementations, Simulations, and Analysis
+# 🔬 GCM Numerical Implementations & Core Projects
 {: .fs-9 }
 
 Technical overview of multi-terabyte data architecture, computational physics, and advanced climate engineering simulations within the **Community Earth System Model** (CESM GCM) framework.
 {: .fs-5 .fw-300 .text-grey-dk-000 }
+
 ---
 
 ## 🔬 Scientific Overview
@@ -26,18 +42,20 @@ The projects documented here utilize **NetCDF (Network Common Data Form)**, the 
 * **Performance:** Optimized for large-scale parallel I/O architectures on the **NCAR Derecho** supercomputer.
 
 ---
-
 ## 🚀 Explore Core Implementations
 Use the sidebar menu or click directly below to explore the detailed numerical setups, workflows, and visualization panels for each research project:
 
 {% for child in site.pages %}
   {% if child.parent == page.title %}
-1. [**{{ child.title }}**]({{ child.url | relative_url }}) — {{ child.description }}
+    {% assign clean_title = child.title | remove: "1. " | remove: "2. " | remove: "3. " %}
+* [**{{ clean_title }}**]({{ child.url | relative_url }}) — {{ child.description }}
   {% endif %}
 {% endfor %}
 
-<style>
-  .child_nav_list, #table-of-contents, .text-delta + ul, .has_children + ul {
-    display: none !important;
-  }
+<hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
+
+<div style="font-size: 0.85em; color: #555; line-height: 1.6; margin-top: 20px;">
+  <p>📝 <strong>Note:</strong> This repository showcases specific technical implementations in <strong>HPC and Climate Analytics</strong>.</p>
+  <p>🔒 <strong>Privacy Note:</strong> Full source code and configuration files are hosted in private repositories. Specific code samples (e.g., Python data pipelines or Fortran core modifications) are available upon request.</p>
+</div>
 </style>
