@@ -7,19 +7,15 @@ nav_order: 3
 description: "4D numerical array code modification for time-space-wavelength dynamic forcing."
 ---
 <style>
-  /* Fuerza al navegador a mostrar siempre el espacio del scrollbar para evitar saltos de pantalla */
   html {
     overflow-y: scroll;
   }
-
   .site-title {
     font-size: 1.3em !important; 
     font-weight: 500 !important;
     letter-spacing: 0.5px !important;
   }
-  /* Fuerza a la barra lateral izquierda a mantener un ancho fijo idéntico en todo el sitio */
-  .side-bar {
-    width: 290px !important; /* Ajusta este número si la quieres un poco más estrecha o ancha */
+ {width: 290px !important; 
     min-width: 290px !important;
   }
 </style>
