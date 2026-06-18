@@ -5,7 +5,17 @@ parent: "🔬 Research Projects"
 nav_order: 1
 description: "Hardcoded parameterizations of non-spectral solar constant reductions."
 ---
-
+<style>
+  .site-title {
+    font-size: 1.3em !important; 
+    font-weight: 500 !important;
+    letter-spacing: 0.5px !important;
+  }
+  .side-bar {
+    width: 290px !important; /* Ajustado a los 290px que unificamos */
+    min-width: 290px !important;
+  }
+</style>
 # Bolometric Dimming and Climatic Response produced by a space-based Sunshade
 {: .fs-8 }
 
