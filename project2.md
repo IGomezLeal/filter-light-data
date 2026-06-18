@@ -21,8 +21,8 @@ description: "Implementation of Spectral Dimming experiments of the Solar Irradi
 {: .fs-8 }
 
 * **Framework:** CESM with the Whole Atmosphere Community Climate Model (WACCM).
-* **Implementation:** Numerical integration into the GCM radiative transfer core of a spectral filter sunshade orbiting at the first Lagrangian point (L<sub>1</sub>) with a spectral dimming effect on the solar irradiance.
-* **Analytics Workflow:** Developed spectral analysis pipelines to evaluate different wavelength bands radiation attenuations on the near infrared, focusing on different climate responses (atmospheric water vapor primary and secondary absorptions and NIR atmospheric window). Computed multidimensional climate anomaly diagnostics under the Shared Socioeconomic Pathways (SSP) framework **SSP2-4.5** future scenario.
+* **Implementation:** Numerical integration into the GCM radiative transfer core of three spectral filter sunshade cases orbiting at the first Lagrangian point (L<sub>1</sub>) with a spectral dimming effect on the solar irradiance. The transmissivity requirements of the wavelength-band filter cases have been calculated. The filters design has been performed in collaboration with the Department of Mechanical, Materials and Manufacturing Engineering of Nottingham University (UK).
+* **Analytics Workflow:** Developed spectral analysis pipelines to evaluate different wavelength bands radiation attenuations on the near infrared, focusing on different climate responses (atmospheric water vapor primary and secondary NIR absorptions and atmospheric window). Computed multidimensional climate anomaly diagnostics under the Shared Socioeconomic Pathways (SSP) framework **SSP2-4.5** future scenario.
 * **Big Data Scale:** High-throughput I/O pipelines for 60 TB of climate dataset output. Developed routines to ingest and transform NetCDF4 structures into multidimensional arrays within the Fortran model core on the NCAR Derecho HPC cluster, with subsequent statistical analysis via parallelized Python (Xarray/NumPy) workflows.
 
 <p style="font-size: 0.9em; color: #666; font-style: italic; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
