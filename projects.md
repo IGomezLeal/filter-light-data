@@ -58,4 +58,4 @@ Use the sidebar menu or click directly below to explore the detailed numerical s
   <p>📝 <strong>Note:</strong> This repository showcases specific technical implementations in <strong>HPC and Climate Analytics</strong>.</p>
   <p>🔒 <strong>Privacy Note:</strong> Full source code and configuration files are hosted in private repositories. Specific code samples (e.g., Python data pipelines or Fortran core modifications) are available upon request.</p>
 </div>
-</style>
+
